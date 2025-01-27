@@ -3,5 +3,4 @@
     description: "Ensure commit messages follow required format."
     entry: '^JIRA-\d+ - .+$'
     language: pygrep
-    types: [text]
     stages: [commit-msg]
