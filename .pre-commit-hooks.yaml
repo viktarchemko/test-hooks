@@ -4,3 +4,4 @@
     entry: '^JIRA-\d+ - .+$'
     language: pygrep
     stages: [commit-msg]
+    args: [--negate]
