@@ -1,0 +1,6 @@
+-   id: check-commit-msg
+    name: Check commit message
+    description: Checks commit messages for conformance to a specified format.
+    entry: python3 check_commit_msg.py
+    language: python
+    stages: [commit-msg]
