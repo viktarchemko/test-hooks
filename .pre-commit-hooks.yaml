@@ -1,7 +1,7 @@
 -   id: check-commit-msg
     name: Check commit message
-    description: Checks commit messages for conformance to a specified format.
-    entry: check-commit-msg
-    language: script
-    types: [python]
+    description: "Ensure commit messages follow required format."
+    entry: '^JIRA-\d+ - .+$'
+    language: pygrep
+    types: [text]
     stages: [commit-msg]
