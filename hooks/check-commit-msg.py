@@ -1,8 +1,7 @@
-#!/usr/bin/env python3
 import sys
 import re
 
-def main() -> int:
+def main():
     commit_msg_file = sys.argv[1]
     with open(commit_msg_file, 'r') as file:
         commit_msg = file.read().strip()
