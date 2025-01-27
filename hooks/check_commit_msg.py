@@ -2,7 +2,7 @@
 import sys
 import re
 
-def check_commit_message():
+def main() -> int:
     commit_msg_file = sys.argv[1]
     with open(commit_msg_file, 'r') as file:
         commit_msg = file.read().strip()
@@ -15,4 +15,4 @@ def check_commit_message():
     return 0
 
 if __name__ == "__main__":
-    exit(check_commit_message())
+    raise SystemExit(main())
